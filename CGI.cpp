@@ -72,7 +72,7 @@ void CGI::craft_response(Request &client)
 {
     if(_status == "500")
     {
-        cgi_error();
+        cgi_error(client);
         return;
     }
 
